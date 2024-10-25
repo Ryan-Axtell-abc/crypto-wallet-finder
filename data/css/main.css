@@ -1,0 +1,211 @@
+/* Main CSS for application */
+
+.box_shadow {
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.03), 0 1px 3px 1px rgba(0,0,0,0.07), 0 2px 6px 2px rgba(0,0,0,0.03);
+}
+
+.drive {
+
+  padding: 10px;
+  border-spacing: 10px;
+  /*margin: 0px 10px;
+  background-color: @view_bg_color;*/
+  background-color: @popover_bg_color;
+  min-width: 250px;
+}
+
+.drive_holder {
+  /*border-spacing: 10px;*/
+  margin: 10px 10px;
+}
+
+.status_holder {
+  min-height: 160px;
+  /*background-color: blue;*/
+}
+
+.info_box {
+ /* margin-top: 60px;
+  background-color: blue;*/
+  min-height: 73px;
+}
+
+.is_connected_result {
+  border-radius: 12px;
+  padding: 0px 10px;
+  min-height: 25px;
+}
+
+.button_box {
+  /*min-height: 80px;*/
+}
+
+
+
+
+
+
+
+/*             THEMES                */
+.gold_border {
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.03), 0 1px 3px 1px rgba(0,0,0,0.07), 0 2px 6px 2px rgba(0,0,0,0.03);
+  /*background: linear-gradient(150deg, #FFFEFA 0%, #E7B848 30%, #C86505 40%, #F9CE6C 100%);*/
+  background: linear-gradient(150deg, #FFFEFA 0%, #F9CE6C 30%, #C86505 40%, #F9CE6C 60%, #FFFEFA 100%);
+}
+.gold {
+  /*background-image: linear-gradient(to right, #FFA946 , #FF8646);*/
+  /*background: linear-gradient(150deg, #F9CE6C 0%, #C86505 60%, #E7B848 70%, #FFFEFA 100%);*/
+  background: linear-gradient(150deg, #F9CE6C 0%, #C86505 60%, #E7B848 100%);
+}
+
+.blue {
+  background: linear-gradient(to right,@blue_2,@blue_3);
+}
+
+
+.green {
+  background: linear-gradient(to right,@green_2,@green_3);
+}
+
+.yellow2 {
+  background: linear-gradient(to right,@yellow_2,@yellow_3);
+}
+
+.yellow {
+  background: linear-gradient(to right, #e5a50a, #cd9309);
+}
+
+.grey {
+  /*background: linear-gradient(to right, rgb(210, 210, 210), rgb(185, 185, 185));*/
+  background: linear-gradient(to right, rgba(140, 140, 140, 0.15), rgba(140, 140, 140, 0.3));
+  /*border-style: solid;
+  border-width: 1px;
+  border-color: rgb(220, 220, 220, 0.5);*/
+}
+
+.running {
+  background: linear-gradient(270deg, #99c1f1, #62a0ea, #3584e4);
+  background-size: 600% 600%;
+
+  animation: blue-scroll 10s ease infinite;
+}
+
+
+@keyframes blue-scroll {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+
+.outline_text {
+  color: white;
+  text-shadow: -1px 1px 0px black,
+				  1px 1px 0px black,
+				 1px -1px 0px black,
+				 -1px -1px 0px black;
+  /*text-shadow: 0px 0px 5px #000;*/
+}
+
+.sub_text {
+  /*color: @popover_fg_color;*/
+  opacity: .55;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.icons {
+  height: 2px;
+}
+
+.holder_border_theme_base {
+  border-radius: 12px;
+  padding: 2px;
+  min-height: 25px;
+
+}
+
+.holder_theme_base {
+  border-radius: 11px;
+  padding: 0px 10px;
+
+}
+
+.warning_box {
+  border-radius: 12px;
+  padding: 5px;
+  min-height: 33px;
+  margin: 10px;
+
+}
+
+
+.neutralize_link_spacing {
+  line-height: 0px;
+  margin: -2px 0px -3px 0px;
+  padding: 0px;
+}
+
+
+.list_expander {
+  margin: 5px;
+  /*
+  
+  margin-top: 5px;
+  margin-bottom: 5px;
+  */
+}
+
+.list_row {
+  /*
+  
+  */
+  padding: 10px;
+}
+
+.rounded {
+  border-radius: 12px;
+}
+.rounded_top {
+  border-radius: 12px 12px 0px 0px;
+}
+.rounded_bottom {
+  border-radius: 0px 0px 12px 12px;
+}
+
+.scrolled_window {
+  margin: 30px;
+  padding: 30px;
+}
+
+.centered_info_box {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.dashed_border {
+  border: 2px;
+  border-style: dashed;
+  border-color: #3584e4;
+}
+.foreground_color {
+  background-color: rgba(@popover_fg_color, alpha);
+}
+
+.blank {
+  background-color: rgba(0,0,0,0.0);
+
+  box-shadow: 0;
+  border: 0;
+  border-style: none;
+  margin: 0;
+  padding:0;
+  border-radius: 0px;
+  line-height: 0px;
+  min-height: 0px;
+}
+
+.zero-margin {
+  margin: 0px;
+}

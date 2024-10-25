@@ -3,26 +3,19 @@
 A JavaScript site that uses Three.js to animate maze generation and maze-solving algorithms in 3D. It features algorithms like A\* and depth-first search, with an interactive step-by-step mode to help users better understand the processes behind the algorithms.
 
 
-![Cloth Simulation Screenshot](https://github.com/Ryan-Axtell-abc/three-js-maze/blob/main/assets/screenshot.png)
-
-## Demo
-
-[Live Demo Link](https://maze.ryanaxtell.dev/)
-
-# Controls
-
-| Command          | Action                                   |
-|------------------|------------------------------------------|
-| **Left click**   | Pan camera                               |
-| **Middle Click** | Rotate camera                            |
-| **Right click**  | Toggle walls / drag start and end points |
+![Crypto Wallet Finder screenshot](https://github.com/Ryan-Axtell-abc/crypto-wallet-finder/blob/main/data/screenshot.png)
 
 ## Installation
 
 ### Prerequisites
-
-- **Node.js** (v12 or higher recommended)
-- **npm** (comes with Node.js)
+from gi.repository import Gtk, Gio, Adw, GLib
+import subprocess
+import threading
+import time
+import os
+import psutil
+- **Python3**
+- **pip**
 
 ### Clone the Repository
 
@@ -34,23 +27,5 @@ cd three-js-maze
 ### Install Dependencies
 
 ```bash
-npm install
+pip install -r requirements.txt
 ```
-
-## Usage
-
-### Running the Simulation
-
-```bash
-npx vite
-```
-
-Open your web browser and navigate to `http://localhost:5173` to view the simulation.
-
-### Building for Production
-
-```bash
-npx vite build
-```
-
-The production-ready files will be in the `dist/` directory.

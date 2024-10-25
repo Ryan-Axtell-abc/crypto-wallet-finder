@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0" />
+  <requires lib="libadwaita" version="1.0" />
+  <template class="MainWindow" parent="AdwApplicationWindow">
+    <property name="title" translatable="yes">Crypto Sniffer</property>
+    <property name="default_width">900</property>
+    <property name="default_height">200</property>
+    <child>
+      <object class="GtkBox" id="main_content">
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="AdwHeaderBar">
+            <child type="start">
+              <object class="GtkButton" id="flap_toggle">
+                <property name="icon-name">sidebar-show-right-symbolic</property>
+                <property name="tooltip-text" translatable="yes">Show/Hide the sidebar</property>
+                <!-- <property name="active">True</property> -->
+                <signal name="clicked" handler="on_flap_toggled" swapped="no" />
+              </object>
+            </child>
+            <child type="start">
+              <object class="GtkButton" id="color_scheme_button">
+                <property name="icon-name">weather-clear-symbolic</property>
+                <property name="tooltip-text" translatable="yes">Switch Dark/Light mode</property>
+                <signal name="clicked" handler="on_color_switch" swapped="no" />
+              </object>
+            </child>
+            <child type="end">
+              <object class="GtkMenuButton" id="app_button">
+                <property name="menu-model">app_menu</property>
+                <property name="icon-name">open-menu-symbolic</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwFlap" id="flap">
+            <property name="locked">True</property>
+            <child type="content">
+              <object class="GtkStack" id="stack">
+                <child>
+                  <object class="GtkStackPage">
+                    <property name="name">page1</property>
+                    <property name="title">Drive Bay</property>
+                    <property name="child">
+                      <object class="GtkBox" id="page1_box">
+                        <property name="orientation">vertical</property>
+
+                        <child>
+                          <object class="GtkSeparator" />
+                        </child>
+                        <child>
+                          <object class="AdwViewStack" id="page1_content">
+                            <child>
+                              <object class="AdwViewStackPage">
+                                <property name="name">page1</property>
+                                <property name="title">Page 1</property>
+                                <property name="icon-name">media-record-symbolic</property>
+                                <property name="child">
+                                  <object class="GtkBox" id="content_box">
+                                    <property name="orientation">vertical</property>
+                                    <property name="vexpand">True</property>
+                                    <property name="margin-top">20</property>
+                                    <child>
+                                      <object class="GtkLabel" id="drive_category_label">
+                                        <property name="margin-bottom">10</property>
+                                        <property name="css-classes">heading</property>
+                                        <property name="label">List of USB Connected Drives</property>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkScrolledWindow" id="scroll_window">
+                                        <property name="min-content-height">360</property>
+                                        <child>
+                                          <object class="GtkBox" id="usb_holder">
+                                            <property name="orientation">horizontal</property>
+                                            <property name="css-classes">drive_holder</property>
+                                            <property name="halign">3</property>
+                                          </object>
+                                        </child>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkBox" id="filler_box">
+                                        <property name="orientation">horizontal</property>
+                                        <property name="vexpand">True</property>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkBox" id="filler_box2">
+                                        <property name="orientation">horizontal</property>
+                                        <property name="vexpand">True</property>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkBox" id="filler_box3">
+                                        <property name="orientation">horizontal</property>
+                                        <property name="vexpand">True</property>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkBox" id="filler_box4">
+                                        <property name="orientation">horizontal</property>
+                                        <property name="vexpand">True</property>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkBox" id="filler_box5">
+                                        <property name="orientation">horizontal</property>
+                                        <property name="vexpand">True</property>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkBox" id="filler_box6">
+                                        <property name="orientation">horizontal</property>
+                                        <property name="vexpand">True</property>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkBox" id="filler_box7">
+                                        <property name="orientation">horizontal</property>
+                                        <property name="vexpand">True</property>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkBox" id="filler_box8">
+                                        <property name="orientation">horizontal</property>
+                                        <property name="vexpand">True</property>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkBox" id="filler_box9">
+                                        <property name="orientation">horizontal</property>
+                                        <property name="vexpand">True</property>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkBox" id="filler_box10">
+                                        <property name="orientation">horizontal</property>
+                                        <property name="vexpand">True</property>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkBox" id="filler_box11">
+                                        <property name="orientation">horizontal</property>
+                                        <property name="vexpand">True</property>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkBox" id="filler_box12">
+                                        <property name="orientation">horizontal</property>
+                                        <property name="vexpand">True</property>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkBox" id="warning_box">
+                                        <property name="orientation">horizontal</property>
+                                        <property name="css-classes">warning_box</property>
+                                        <child>
+                                          <object class="GtkLabel" id="warning_label">
+                                            <property name="margin-start">15</property>
+                                            <property name="css-classes">heading</property>
+                                            <property name="label">Warning, drive(s) have been removed without being unmounted</property>
+                                            <property name="visible">False</property>
+                                          </object>
+                                        </child>
+                                        <child>
+                                          <object class="GtkBox" id="warning_filler_box">
+                                            <property name="orientation">horizontal</property>
+                                            <property name="hexpand">True</property>
+                                          </object>
+                                        </child>
+                                        <child>
+                                          <object class="GtkButton" id="unmount_button">
+                                            <property name="visible">False</property>
+                                            <child>
+                                              <object class="GtkBox">
+                                                <child>
+                                                  <object class="GtkImage">
+                                                    <property name="icon-name">media-eject-symbolic</property>
+                                                  </object>
+                                                </child>
+                                                <child>
+                                                  <object class="GtkLabel">
+                                                    <property name="margin-start">8</property>
+                                                    <property name="label">Unmount drive(s)</property>
+                                                  </object>
+                                                </child>
+                                              </object>
+                                            </child>
+                                          </object>
+                                        </child>
+                                      </object>
+                                    </child>
+                                  </object>
+                                </property>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </property>
+                  </object>
+                </child>
+
+                <child>
+                  <object class="GtkStackPage">
+                    <property name="name">page3</property>
+                    <property name="title">Preferences</property>
+                    <property name="child">
+                      <object class="GtkBox" id="page3_box">
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <object class="AdwPreferencesPage">
+                            <property name="title">Preferences</property>
+                            <child>
+                              <object class="AdwPreferencesGroup" id="page3_pref_grp1">
+                                <property name="title">Button behaviour</property>
+                                <property name="description">A fast search just looks in the default locations crypto wallets are found, a deep search searches the whole drive</property>
+                                <child>
+                                  <object class="AdwComboRow" id="default_search_depth_picker">
+                                    <property name="title" translatable="yes">Default search depth</property>
+                                    <property name="subtitle">How far the default button searches</property>
+                                    <property name="icon-name">find-location-symbolic</property>
+                                    <property name="model">
+                                      <object class="GtkStringList">
+                                        <items>
+                                          <item translatable="yes">Fast</item>
+                                          <item translatable="yes">Deep</item>
+                                        </items>
+                                      </object>
+                                    </property>
+                                    <signal name="notify::selected-item" handler="default_search_depth_picker_function" swapped="no" />
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="AdwActionRow" id="secondary_button_toggle">
+                                    <property name="title">Deep search secondary button</property>
+                                    <property name="subtitle">Searches the entire disk for crypto wallets</property>
+                                    <property name="icon-name">drive-harddisk-system-symbolic</property>
+                                    <child>
+                                      <object class="GtkSwitch" id="secondary_button_toggle_switch">
+                                        <property name="halign">GTK_ALIGN_CENTER</property>
+                                        <property name="valign">GTK_ALIGN_CENTER</property>
+                                        <property name="hexpand">FALSE</property>
+                                        <property name="vexpand">FALSE</property>
+                                        <signal name="state-set" handler="secondary_button_toggle_function" swapped="no" />
+                                      </object>
+                                    </child>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="AdwPreferencesGroup" id="page3_pref_grp2">
+                                <property name="title">Audio</property>
+                                <property name="description">If the sound effects get annoying you can turn them off</property>
+                                <child>
+                                  <object class="AdwActionRow" id="asdasdasd2">
+                                    <property name="title">Sound effects</property>
+                                    <property name="subtitle">Enables and disables sound effects</property>
+                                    <property name="icon-name">audio-speakers-symbolic</property>
+                                    <child>
+                                      <object class="GtkSwitch" id="audio_toggle_switch">
+                                        <property name="halign">GTK_ALIGN_CENTER</property>
+                                        <property name="valign">GTK_ALIGN_CENTER</property>
+                                        <property name="hexpand">FALSE</property>
+                                        <property name="vexpand">FALSE</property>
+                                        <signal name="state-set" handler="audio_toggle_function" swapped="no" />
+                                      </object>
+                                    </child>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="AdwPreferencesGroup" id="page3_pref_grp3">
+                                <property name="title">Theme</property>
+                                <property name="description">Like how it looks</property>
+                                <child>
+                                  <object class="AdwComboRow" id="default_theme_picker">
+                                    <property name="title" translatable="yes">Default color theme</property>
+                                    <property name="subtitle">Light or dark</property>
+                                    <property name="icon-name">weather-clear-symbolic</property>
+                                    <property name="model">
+                                      <object class="GtkStringList">
+                                        <items>
+                                          <item translatable="yes">Light</item>
+                                          <item translatable="yes">Dark</item>
+                                        </items>
+                                      </object>
+                                    </property>
+                                    <signal name="notify::selected-item" handler="default_theme_toggle_function" swapped="no" />
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </property>
+                  </object>
+                </child>
+
+              </object>
+            </child>
+            <child type="separator">
+              <object class="GtkSeparator" />
+            </child>
+            <child type="flap">
+              <object class="GtkStackSidebar" id="stack_switch">
+                <property name="stack">stack</property>
+                <style>
+                  <class name="background" />
+                </style>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <style>
+      <class name="devel" />
+    </style>
+
+  </template>
+
+  <!-- Main App menu -->
+  <menu id="app_menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">_Quit</attribute>
+        <attribute name="action">win.quit</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">_About</attribute>
+        <attribute name="action">win.about</attribute>
+      </item>
+    </section>
+  </menu>
+</interface>
