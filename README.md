@@ -1,6 +1,6 @@
-# Visualizer for Maze Generation and Maze Solving Algorithms
+# GUI Crypto Wallet Drive Searcher
 
-A JavaScript site that uses Three.js to animate maze generation and maze-solving algorithms in 3D. It features algorithms like A\* and depth-first search, with an interactive step-by-step mode to help users better understand the processes behind the algorithms.
+A Python program with a GTK4 interface that scans drives for cryptocurrency wallets.
 
 
 ![Crypto Wallet Finder screenshot](https://github.com/Ryan-Axtell-abc/crypto-wallet-finder/blob/main/data/screenshot.png)
