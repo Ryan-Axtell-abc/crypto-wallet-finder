@@ -26,3 +26,15 @@ cd crypto-wallet-finder
 ```bash
 pip install psutil
 ```
+
+### Build
+
+```bash
+bash local.sh
+```
+
+### Run
+
+```bash
+cryptosniffer
+```
