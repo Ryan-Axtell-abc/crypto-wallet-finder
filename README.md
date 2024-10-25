@@ -1,6 +1,6 @@
 # GUI Crypto Wallet Drive Searcher
 
-A Python program with a GTK4 interface that scans drives for cryptocurrency wallets.
+A Python program with a GTK4 interface that scans drives for cryptocurrency wallets. It's meant for use with USB drive docks for reliable plugging and unplugging of drives.
 
 
 ![Crypto Wallet Finder screenshot](https://github.com/Ryan-Axtell-abc/crypto-wallet-finder/blob/main/data/screenshot.png)
