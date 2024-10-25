@@ -3,8 +3,6 @@ from cryptosniffer.functions import get_drive_ui_element
 
 import time
 import os
-from playsound import playsound
-from configupdater import ConfigUpdater
 
 
 

@@ -8,24 +8,21 @@ A JavaScript site that uses Three.js to animate maze generation and maze-solving
 ## Installation
 
 ### Prerequisites
-from gi.repository import Gtk, Gio, Adw, GLib
-import subprocess
-import threading
-import time
-import os
-import psutil
+- **GTK4**
+- **PyGObject**
+- **Libadwaita**
 - **Python3**
 - **pip**
 
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/Ryan-Axtell-abc/three-js-maze.git
-cd three-js-maze
+git clone https://github.com/Ryan-Axtell-abc/crypto-wallet-finder.git
+cd crypto-wallet-finder
 ```
 
 ### Install Dependencies
 
 ```bash
-pip install -r requirements.txt
+pip install psutil
 ```
